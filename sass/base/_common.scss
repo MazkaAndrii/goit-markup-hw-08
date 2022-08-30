@@ -1,0 +1,17 @@
+.list {
+   list-style: none;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   padding: 0px;
+   display: flex;
+   align-items: center;
+   gap: 30px;
+}
+.link {
+   text-decoration: none;
+}
+body {
+   font-family: 'Roboto', sans-serif;
+   color: var(--text-color);
+   background-color: var(--accent-color);
+}

@@ -1,0 +1,120 @@
+.footer {
+   padding-top: 60px;
+   padding-bottom: 60px;
+   background-color: #2f303a;
+}
+.footer__container {
+   display: flex;
+   align-items: baseline;
+}
+.footer__contacts {
+   display: block;
+   box-sizing: border-box;
+   width: 227px;
+   margin-right: 70px;
+}
+.logo-footer {
+   display: block;
+   margin-bottom: 20px;
+}
+.logo__light {
+   color: var(--accent-color);
+   padding-top: 60px;
+}
+.footer__adress {
+   font-style: normal;
+   font-size: 14px;
+   line-height: 1.71;
+   letter-spacing: 0.03em;
+   color: var(--accent-color);
+   text-align: left;
+}
+.footer__contacts {
+   list-style: none;
+}
+.contacts__mail-ft {
+   margin: 9px auto;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 1.71;
+   letter-spacing: 0.03em;
+   color: rgba(255, 255, 255, 0.6);
+}
+.contacts__tel-ft {
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 1.71;
+   letter-spacing: 0.03em;
+   color: rgba(255, 255, 255, 0.6);
+}
+.ft-header {
+   margin-bottom: 20px;
+   font-size: 14px;
+   line-height: 1.14;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+   color: var(--accent-color);
+}
+.sociallinks__link-footer {
+   background-color: rgba(255, 255, 255, 0.1);
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.sociallinks__icon-footer {
+   fill: #ffffff;
+}
+.ft-form-header {
+   font-size: 14px;
+   line-height: 1.14;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+   color: var(--accent-color);
+   padding-bottom: 20px;
+}
+.ft-form {
+   display: block;
+   margin-left: 93px;
+   margin-right: 0;
+}
+.ft-form-input {
+   width: 358px;
+   height: 50px;
+   margin-right: 12px;
+   padding: 15px 16px;
+   border: 1px solid rgba(255, 255, 255, 0.3);
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+   border-radius: 4px;
+   background: #2f303a;
+   color: rgba(255, 255, 255, 0.6);
+   transition: var(--trans);
+   &::placeholder {
+      font-size: 16px;
+      line-height: 1.25;
+      letter-spacing: 0.03em;
+      color: rgba(255, 255, 255, 0.6);
+   }
+}
+.ft-form-button {
+   position: relative;
+   padding: 10px 29px;
+   text-align: left;
+   width: 200px;
+   height: 50px;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 1.88;
+   letter-spacing: 0.06em;
+   color: var(--accent-color);
+   background-color: var(--header-color);
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   border-radius: 4px;
+   border: 0;
+   cursor: pointer;
+}
+.ft-form-bticon {
+   position: absolute;
+   top: 13px;
+   right: 29px;
+   fill: var(--accent-color);
+}
