@@ -1,8 +1,8 @@
 @import './utils/variables';
-@import './utils/mixins';
 @import './base/reset';
-@import './utils/hidden';
 @import './base/common';
+@import './utils/hidden';
+@import './utils/mixins';
 @import './components/container';
 @import './components/placeholders';
 @import './layout/header';

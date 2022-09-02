@@ -1,6 +1,9 @@
 .section--nopaddingtop {
    padding: 0px 0px 94px 0px;
-}
+   @media screen and (max-width: 1200px) {
+    display: none;  
+   }
+  }
 .about__iconbox {
    position: relative;
 }

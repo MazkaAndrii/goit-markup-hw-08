@@ -1,12 +1,37 @@
+.benefits__item {
+   display: block;
+   width: 100%;
+   
+   @include mobile {
+      width: 450px;
+         }
+   @include tablet {
+      width: 354px;
+   }
+   @include desktop {
+      width: 270px;
+   }
+   
+}
 .benefits__iconbox {
    display: flex;
    justify-content: center;
    align-items: center;
    background-color: #f5f4fa;
    margin-bottom: 30px;
-   width: 270px;
    height: 120px;
+
+   @include mobile {
+      width: 450px;
+         }
+   @include tablet {
+      width: 354px;
+   }
+   @include desktop {
+      width: 270px;
+   }
 }
+
 .benefits__header {
    font-weight: var(--font-weight);
    font-size: 14px;
