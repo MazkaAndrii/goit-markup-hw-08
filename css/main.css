@@ -1,4 +1,3 @@
-@charset "UTF-8";
 :root {
   --header-color: #2196f3;
   --accent-color: #ffffff;
@@ -32,12 +31,8 @@ h6 {
 
 .list {
   list-style: none;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding: 0px;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   gap: 30px;
 }
 
@@ -89,7 +84,12 @@ body {
 }
 
 .section {
-  padding: 94px 0px;
+  padding: 60px 0px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 0px;
+  }
 }
 
 .section__title {
@@ -116,7 +116,6 @@ body {
 }
 
 .header__container {
-  display: block;
   display: flex;
   align-items: center;
 }
@@ -217,15 +216,15 @@ body {
 }
 
 .hero {
+  display: flex;
+  align-items: center;
   background-color: #2f303a;
-  padding-top: 200px;
-  padding-bottom: 200px;
   text-align: center;
 }
 
-.overlay {
+.hero__overlay {
   max-width: 1600px;
-  height: 600px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heroimg.jpg);
@@ -233,59 +232,47 @@ body {
   background-position: center;
   background-size: cover;
 }
+@media screen and (min-width: 1200px) {
+  .hero__overlay {
+    height: 600px;
+  }
+}
 
-.hero-h {
+.hero__title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--accent-color);
-  max-width: 695px;
+  max-width: 360px;
   margin: 0 auto;
   margin-bottom: 30px;
 }
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 695px;
+  }
+}
 
-.hero-bt {
+.hero__button {
   font-family: inherit;
   font-weight: var(--font-weight);
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.06em;
   color: var(--accent-color);
   background-color: var(--header-color);
   cursor: pointer;
   border-radius: 4px;
   padding: 10px 32px;
-  max-width: 100%;
-  margin: 0 auto;
   border: none;
   transition: background-color var(--trans), color var(--trans);
 }
-.hero-bt:hover, .hero-bt:focus {
+.hero__button:hover, .hero__button:focus {
   background-color: #188ce8;
-}
-
-.benefits__item {
-  display: block;
-  width: 100%;
-}
-@media screen and (min-width: 480px) {
-  .benefits__item {
-    width: 450px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .benefits__item {
-    width: 354px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .benefits__item {
-    width: 270px;
-  }
 }
 
 .benefits__iconbox {
@@ -319,8 +306,14 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--text-color);
+  text-align: center;
   margin-top: 0px;
   margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .benefits__header {
+    text-align: start;
+  }
 }
 
 .benefits__text {
@@ -329,7 +322,21 @@ body {
   letter-spacing: 0.03em;
   color: var(--basetext-color);
   margin: 0px;
-  max-width: 270px;
+}
+@media screen and (min-width: 480px) {
+  .benefits__text {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .benefits__text {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits__text {
+    width: 270px;
+  }
 }
 
 .section--nopaddingtop {
@@ -365,7 +372,6 @@ body {
 }
 
 .sociallinks {
-  display: flex;
   justify-content: center;
   gap: 10px;
 }
@@ -446,26 +452,39 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.cust-link {
+.customer__item {
+  width: calc((100% - 30px) / 2);
+}
+@media screen and (min-width: 768px) {
+  .customer__item {
+    width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customer__item {
+    width: calc((100% - 150px) / 6);
+  }
+}
+
+.customer__link {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   transition: border var(--trans);
 }
-.cust-link:hover, .cust-link:focus {
+.customer__link:hover, .customer__link:focus {
   background-color: var(--accent-color);
   border: 1px solid var(--header-color);
 }
 
-.icon-сust {
+.customer__icon {
   fill: #afb1b8;
   transition: fill var(--trans);
 }
-.cust-link:hover .icon-сust, .cust-link:focus .icon-сust {
+.customer__link:hover .customer__icon, .customer__link:focus .customer__icon {
   fill: var(--header-color);
 }
 
