@@ -1,9 +1,16 @@
-.oserv-but {
-   margin-bottom: 50px;
+.filters {
+   margin-bottom: 40px;
    column-gap: 8px;
-   justify-content: center;
+   @include tablet {
+      justify-content: center;
+      margin-bottom: 14px;
+   }
+   @include desktop {
+      justify-content: center;
+      margin-bottom: 50px;
+   }
 }
-.filter {
+.filters__button {
    font-family: inherit;
    font-weight: 500;
    font-size: 16px;
@@ -27,8 +34,14 @@
          0px 2px 2px rgba(0, 0, 0, 0.12);
    }
 }
-.oserv-list {
-   flex-wrap: wrap;
+
+.ourserv__item {
+   @include tablet {
+    width: calc((100% - 30px) / 2);  
+   }
+   @include desktop {
+    width: calc((100% - 60px) / 3);  
+   }
 }
 .oserv__link {
    display: block;
