@@ -61,7 +61,6 @@ body {
 }
 
 .container {
-  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -138,6 +137,23 @@ body {
   color: #000000;
 }
 
+.navmenu__button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: var(--accent-color);
+}
+.navmenu__button:hover, .navmenu__button:focus {
+  fill: var(--header-color);
+  cursor: pointer;
+}
+
 .navigation {
   -moz-column-gap: 50px;
        column-gap: 50px;
@@ -178,6 +194,7 @@ body {
 }
 
 .contacts {
+  display: none;
   margin-left: auto;
   -moz-column-gap: 50px;
        column-gap: 50px;
@@ -695,6 +712,7 @@ body {
   margin-bottom: 40px;
   -moz-column-gap: 8px;
        column-gap: 8px;
+  row-gap: 15px;
 }
 @media screen and (min-width: 768px) {
   .filters {
