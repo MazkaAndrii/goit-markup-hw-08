@@ -9,7 +9,6 @@
 
 img {
   display: block;
-  width: 100%;
   max-width: 100%;
   height: auto;
 }
@@ -148,10 +147,6 @@ body {
   width: 40px;
   height: 40px;
   background: var(--accent-color);
-}
-.navmenu__button:hover, .navmenu__button:focus {
-  fill: var(--header-color);
-  cursor: pointer;
 }
 
 .navigation {
@@ -513,7 +508,6 @@ body {
 
 .footer__container {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -521,6 +515,7 @@ body {
 @media screen and (min-width: 768px) {
   .footer__container {
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: baseline;
     text-align: center;
@@ -529,6 +524,7 @@ body {
 @media screen and (min-width: 1200px) {
   .footer__container {
     flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: baseline;
     text-align: start;
@@ -639,6 +635,14 @@ body {
 .ft-form {
   display: block;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .ft-form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 @media screen and (min-width: 1200px) {
   .ft-form {
     margin-left: 93px;
@@ -675,6 +679,11 @@ body {
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+@media screen and (min-width: 480px) {
+  .ft-form-input {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .ft-form-input {
@@ -762,8 +771,9 @@ body {
 }
 
 .oserv__link {
-  display: block;
-  width: 370px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition: box-shadow var(--trans);
 }
 .oserv__link:hover, .oserv__link:focus {
@@ -814,6 +824,7 @@ body {
 
 .oserv-text {
   padding: 20px 24px;
+  flex-grow: 1;
   border: 1px solid #eeeeee;
 }
 
