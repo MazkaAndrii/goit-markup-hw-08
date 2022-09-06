@@ -136,12 +136,26 @@ body {
   color: #000000;
 }
 
-.navmenu__button {
+.navmenu__button--open {
   margin-left: auto;
   border: none;
   background: var(--accent-color);
 }
-.navmenu__button:hover, .navmenu__button:focus {
+.navmenu__button--open:hover, .navmenu__button--open:focus {
+  fill: var(--header-color);
+  cursor: pointer;
+}
+
+.navmenu__button--close {
+  border: none;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  display: block;
+  margin-left: auto;
+  background: var(--accent-color);
+}
+.navmenu__button--close:hover, .navmenu__button--close:focus {
   fill: var(--header-color);
   cursor: pointer;
 }
@@ -162,14 +176,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.navmenu__button--close {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  display: block;
-  margin-left: auto;
 }
 
 .navmenu__list {
