@@ -16,19 +16,23 @@
    position: absolute;
    top: 50%;
    left: 50%;
-   width: 450px;
+   width: calc(100% - 30px);
    height: 100%;
    background-color: var(--accent-color);
-   transform: translate(-50%, -50%) scale(1);
+   transform: translate(-50%, -40%) scale(1);
    transition: transform var(--trans);
    padding: 40px;
    .backdrop.is-hidden & {
-      transform: translate(-50%, -50%) scale(0);
+      transform: translate(-50%, -40%) scale(0);
+   }
+   @include mobile {
+      width: 450px;
    }
    @include desktop {
     width: 528px;
-    height: 581px;  
-   }
+    height: 581px;
+    transform: translate(-50%, -50%) scale(1);
+    }
 }
 .bt-modal {
    position: absolute;
@@ -176,6 +180,8 @@
    }
 }
 .ch-link {
+   font-size: 12px;
+   line-height: 1.71;
    color: var(--header-color);
-   padding-left: 3px;
+   padding-left: 2px;
 }
