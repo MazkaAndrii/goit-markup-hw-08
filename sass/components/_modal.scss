@@ -16,14 +16,18 @@
    position: absolute;
    top: 50%;
    left: 50%;
-   width: 528px;
-   height: 581px;
+   width: 450px;
+   height: 100%;
    background-color: var(--accent-color);
    transform: translate(-50%, -50%) scale(1);
    transition: transform var(--trans);
    padding: 40px;
    .backdrop.is-hidden & {
       transform: translate(-50%, -50%) scale(0);
+   }
+   @include desktop {
+    width: 528px;
+    height: 581px;  
    }
 }
 .bt-modal {
@@ -48,11 +52,15 @@
 .modal-title {
    font-weight: var(--font-weight);
    font-size: 20px;
-   line-height: 1.15;
+   line-height: 1.5;
    text-align: center;
    letter-spacing: 0.03em;
    color: var(--text-color);
    margin-bottom: 12px;
+   @include desktop {
+      line-height: 1.15;
+   }
+
 }
 .input-label {
    font-size: 12px;
@@ -136,10 +144,13 @@
    display: flex;
    align-items: flex-start;
    justify-content: center;
-   font-size: 14px;
+   font-size: 12px;
    line-height: 1.71;
    letter-spacing: 0.03em;
    color: #757575;
+   @include desktop {
+      font-size: 14px;
+   }
 }
 .ch-text span {
    display: flex;

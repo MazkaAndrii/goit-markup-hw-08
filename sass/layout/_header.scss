@@ -5,8 +5,10 @@
 .header__container {
    display: flex;
    align-items: center;
+   @media screen and (min-width: 768px) and (max-width: 1199px) {
+      justify-content: space-between;
+   }
 }
-
 .logo {
    font-family: Raleway;
    font-weight: var(--font-weight);
@@ -17,8 +19,11 @@
    letter-spacing: 0.02em;
 }
 .logo__header {
-   margin-right: 93px;
+   @include desktop {
+      margin-right: 93px;
+   }
 }
+
 .logo__dark {
    color: #000000;
 }
@@ -30,6 +35,9 @@
    &:focus {
       fill: var(--header-color);
       cursor: pointer;
+   }
+   @include tablet {
+      display: none;
    }
 }
 .navmenu__button--close {
@@ -62,14 +70,10 @@
    flex-direction: column;
    justify-content: space-between;
 }
-.navmenu__icon {
-}
-.navmenu__navigation {
-}
 .navmenu__list {
    flex-direction: column;
    column-gap: 32px;
-   }
+}
 .navmenu__item {
    padding-left: 40px;
 }
@@ -105,16 +109,16 @@
    letter-spacing: 0.02em;
    color: var(--header-color);
    margin-bottom: 48px;
-   
 }
 .navmenusociallinks__item {
    margin-bottom: 48px;
-  &:not(:last-child)::after {
-   content: "";
-   width: 22px;
-   height: 0px;
-   border: 1px solid rgba(33, 33, 33, 0.2);
-   transform: rotate(90deg);}
+   &:not(:last-child)::after {
+      content: '';
+      width: 22px;
+      height: 0px;
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      transform: rotate(90deg);
+   }
 }
 .navmenusociallinks__link {
    font-weight: 500;
@@ -135,7 +139,15 @@
 
 .navigation {
    display: none;
-   column-gap: 50px;
+   @include tablet {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+   }
+   @include desktop {
+      display: flex;
+      column-gap: 50px;
+   }
 }
 .navigation__link {
    padding-left: 2px;
@@ -171,8 +183,16 @@
 }
 .contacts {
    display: none;
-   margin-left: auto;
-   column-gap: 50px;
+   @include tablet {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+   }
+   @include desktop {
+      flex-direction: row;
+      margin-left: auto;
+      column-gap: 50px;
+   }
 }
 .contacts__mail,
 .contacts__tel {

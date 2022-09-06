@@ -117,6 +117,11 @@ body {
   display: flex;
   align-items: center;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header__container {
+    justify-content: space-between;
+  }
+}
 
 .logo {
   font-family: Raleway;
@@ -128,8 +133,10 @@ body {
   letter-spacing: 0.02em;
 }
 
-.logo__header {
-  margin-right: 93px;
+@media screen and (min-width: 1200px) {
+  .logo__header {
+    margin-right: 93px;
+  }
 }
 
 .logo__dark {
@@ -144,6 +151,11 @@ body {
 .navmenu__button--open:hover, .navmenu__button--open:focus {
   fill: var(--header-color);
   cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .navmenu__button--open {
+    display: none;
+  }
 }
 
 .navmenu__button--close {
@@ -257,8 +269,20 @@ body {
 
 .navigation {
   display: none;
-  -moz-column-gap: 50px;
-       column-gap: 50px;
+}
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .navigation {
+    display: flex;
+    -moz-column-gap: 50px;
+         column-gap: 50px;
+  }
 }
 
 .navigation__link {
@@ -297,9 +321,21 @@ body {
 
 .contacts {
   display: none;
-  margin-left: auto;
-  -moz-column-gap: 50px;
-       column-gap: 50px;
+}
+@media screen and (min-width: 768px) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    flex-direction: row;
+    margin-left: auto;
+    -moz-column-gap: 50px;
+         column-gap: 50px;
+  }
 }
 
 .contacts__mail,
@@ -955,8 +991,8 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 100%;
   background-color: var(--accent-color);
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--trans);
@@ -964,6 +1000,12 @@ body {
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .bt-modal {
@@ -988,11 +1030,16 @@ body {
 .modal-title {
   font-weight: var(--font-weight);
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color);
   margin-bottom: 12px;
+}
+@media screen and (min-width: 1200px) {
+  .modal-title {
+    line-height: 1.15;
+  }
 }
 
 .input-label {
@@ -1084,10 +1131,15 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+}
+@media screen and (min-width: 1200px) {
+  .ch-text {
+    font-size: 14px;
+  }
 }
 
 .ch-text span {
