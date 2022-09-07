@@ -21,7 +21,8 @@
    <body>
       <header class="header">
          <div class="container header__container">
-            <a lang="en" href="./index.html" class="logo logo__header">Web<span class="logo__dark">Studio</span>
+            <a lang="en" href="./index.html" class="logo logo__header"
+               >Web<span class="logo__dark">Studio</span>
             </a>
             <button type="button" class="navmenu__button--open" data-menu-open>
                <svg class="navmenu__icon" width="40" height="40">
@@ -38,16 +39,25 @@
                   <nav class="navmenu__navigation">
                      <ul class="navmenu__list list">
                         <li class="navmenu__item">
-                           <a href="./index.html" class="navmenu__link navmenu__link--color link">Студия</a>
+                           <a href="./index.html" class="navmenu__link navmenu__link--color link"
+                              >Студия</a
+                           >
                         </li>
-                        <li class="navmenu__item"><a href="./portfolio.html" class="navmenu__link link">Портфолио</a></li>
-                        <li class="navmenu__item"><a href="" class="navmenu__link link">Контакты</a></li>
+                        <li class="navmenu__item">
+                           <a href="./portfolio.html" class="navmenu__link link">Портфолио</a>
+                        </li>
+                        <li class="navmenu__item">
+                           <a href="" class="navmenu__link link">Контакты</a>
+                        </li>
                      </ul>
                   </nav>
                   <div>
                      <ul class="navmenucontacts list">
                         <li class="navmenucontacts__item">
-                           <a href="tel:+380961111111" class="navmenucontacts__link navmenucontacts__link--tel link">
+                           <a
+                              href="tel:+380961111111"
+                              class="navmenucontacts__link navmenucontacts__link--tel link"
+                           >
                               +38 096 111 11 11
                            </a>
                         </li>
@@ -79,7 +89,13 @@
                   <li>
                      <a href="./index.html" class="navigation__link link">Студия</a>
                   </li>
-                  <li><a href="./portfolio.html" class="navigation__link link navigation__link--current">Портфолио</a></li>
+                  <li>
+                     <a
+                        href="./portfolio.html"
+                        class="navigation__link link navigation__link--current"
+                        >Портфолио</a
+                     >
+                  </li>
                   <li><a href="" class="navigation__link link">Контакты</a></li>
                </ul>
             </nav>
@@ -119,7 +135,29 @@
                   <li class="ourserv__item">
                      <a href="#" class="oserv__link link">
                         <div class="oserv-over">
-                           <img src="./images/img11.jpg" alt="Веб-сайт" width="370" height="294" />
+                           <picture>
+                              <source
+                                 srcset="./images/img11.jpg 1x, ./images/img11-2x.jpg 2x"
+                                 media="(min-width:1200px)"
+                              />
+                              <source
+                                 srcset="./images/img11-tab-1x.jpg 1x, ./images/img11-tab-2x.jpg 2x"
+                                 media="(min-width:768px)"
+                              />
+                              <source
+                                 srcset="
+                                    ./images/img11-mobile-1x.jpg 1x,
+                                    ./images/img11-mobile-2x.jpg 2x
+                                 "
+                                 media="(max-width:767px)"
+                              />
+                              <img
+                                 src="../images/img11-mobile-2x.jpg"
+                                 alt="Веб-сайт"
+                                 width="450"
+                                 height="294"
+                              />
+                           </picture>
                            <p class="over-text">
                               Ресурс предлагает комплексные предложения с разным уровнем функционала
                               и сервисов. Все это позволит посетителю получить исчерпывающие
@@ -135,7 +173,29 @@
                   <li class="ourserv__item">
                      <a href="#" class="oserv__link link">
                         <div class="oserv-over">
-                           <img src="./images/img12.jpg" alt="Дизайн" width="370" height="294" />
+                           <picture>
+                              <source
+                                 srcset="./images/img12.jpg 1x, ./images/img12-2x.jpg 2x"
+                                 media="(min-width:1200px)"
+                              />
+                              <source
+                                 srcset="./images/img12-tab-1x.jpg 1x, ./images/img12-tab-2x.jpg 2x"
+                                 media="(min-width:768px)"
+                              />
+                              <source
+                                 srcset="
+                                    ./images/img12-mobile-1x.jpg 1x,
+                                    ./images/img12-mobile-2x.jpg 2x
+                                 "
+                                 media="(max-width:767px)"
+                              />
+                              <img
+                                 src="../images/img12-mobile-2x.jpg"
+                                 alt="Дизайн"
+                                 width="450"
+                                 height="294"
+                              />
+                           </picture>
                            <p class="over-text">
                               Ресурс предлагает комплексные предложения с разным уровнем функционала
                               и сервисов. Все это позволит посетителю получить исчерпывающие
@@ -151,12 +211,29 @@
                   <li class="ourserv__item">
                      <a href="#" class="oserv__link link">
                         <div class="oserv-over">
-                           <img
-                              src="./images/img13.jpg"
-                              alt="Приложение"
-                              width="370"
-                              height="294"
-                           />
+                           <picture>
+                              <source
+                                 srcset="./images/img13.jpg 1x, ./images/img13-2x.jpg 2x"
+                                 media="(min-width:1200px)"
+                              />
+                              <source
+                                 srcset="./images/img13-tab-1x.jpg 1x, ./images/img13-tab-2x.jpg 2x"
+                                 media="(min-width:768px)"
+                              />
+                              <source
+                                 srcset="
+                                    ./images/img13-mobile-1x.jpg 1x,
+                                    ./images/img13-mobile-2x.jpg 2x
+                                 "
+                                 media="(max-width:767px)"
+                              />
+                              <img
+                                 src="../images/img13-mobile-2x.jpg"
+                                 alt="Приложение"
+                                 width="450"
+                                 height="294"
+                              />
+                           </picture>
                            <p class="over-text">
                               Ресурс предлагает комплексные предложения с разным уровнем функционала
                               и сервисов. Все это позволит посетителю получить исчерпывающие
@@ -172,7 +249,29 @@
                   <li class="ourserv__item">
                      <a href="#" class="oserv__link link">
                         <div class="oserv-over">
-                           <img src="./images/img21.jpg" alt="Маркетинг" width="370" height="294" />
+                           <picture>
+                              <source
+                                 srcset="./images/img21.jpg 1x, ./images/img21-2x.jpg 2x"
+                                 media="(min-width:1200px)"
+                              />
+                              <source
+                                 srcset="./images/img21-tab-1x.jpg 1x, ./images/img21-tab-2x.jpg 2x"
+                                 media="(min-width:768px)"
+                              />
+                              <source
+                                 srcset="
+                                    ./images/img21-mobile-1x.jpg 1x,
+                                    ./images/img21-mobile-2x.jpg 2x
+                                 "
+                                 media="(max-width:767px)"
+                              />
+                              <img
+                                 src="../images/img21-mobile-2x.jpg"
+                                 alt="Маркетинг"
+                                 width="450"
+                                 height="294"
+                              />
+                           </picture>
                            <p class="over-text">
                               Ресурс предлагает комплексные предложения с разным уровнем функционала
                               и сервисов. Все это позволит посетителю получить исчерпывающие
@@ -188,12 +287,29 @@
                   <li class="ourserv__item">
                      <a href="#" class="oserv__link link">
                         <div class="oserv-over">
-                           <img
-                              src="./images/img22.jpg"
-                              alt="Приложение"
-                              width="370"
-                              height="429"
-                           />
+                           <picture>
+                              <source
+                                 srcset="./images/img22.jpg 1x, ./images/img22-2x.jpg 2x"
+                                 media="(min-width:1200px)"
+                              />
+                              <source
+                                 srcset="./images/img22-tab-1x.jpg 1x, ./images/img22-tab-2x.jpg 2x"
+                                 media="(min-width:768px)"
+                              />
+                              <source
+                                 srcset="
+                                    ./images/img22-mobile-1x.jpg 1x,
+                                    ./images/img22-mobile-2x.jpg 2x
+                                 "
+                                 media="(max-width:767px)"
+                              />
+                              <img
+                                 src="../images/img22-mobile-2x.jpg"
+                                 alt="Приложение"
+                                 width="450"
+                                 height="294"
+                              />
+                           </picture>
                            <p class="over-text">
                               Ресурс предлагает комплексные предложения с разным уровнем функционала
                               и сервисов. Все это позволит посетителю получить исчерпывающие
@@ -209,7 +325,29 @@
                   <li class="ourserv__item">
                      <a href="#" class="oserv__link link">
                         <div class="oserv-over">
-                           <img src="./images/img23.jpg" alt="Веб-сайт" width="370" height="294" />
+                           <picture>
+                              <source
+                                 srcset="./images/img23.jpg 1x, ./images/img23-2x.jpg 2x"
+                                 media="(min-width:1200px)"
+                              />
+                              <source
+                                 srcset="./images/img23-tab-1x.jpg 1x, ./images/img23-tab-2x.jpg 2x"
+                                 media="(min-width:768px)"
+                              />
+                              <source
+                                 srcset="
+                                    ./images/img23-mobile-1x.jpg 1x,
+                                    ./images/img23-mobile-2x.jpg 2x
+                                 "
+                                 media="(max-width:767px)"
+                              />
+                              <img
+                                 src="../images/img23-mobile-2x.jpg"
+                                 alt="Веб-сайт"
+                                 width="450"
+                                 height="294"
+                              />
+                           </picture>
                            <p class="over-text">
                               Ресурс предлагает комплексные предложения с разным уровнем функционала
                               и сервисов. Все это позволит посетителю получить исчерпывающие
@@ -225,7 +363,29 @@
                   <li class="ourserv__item">
                      <a href="#" class="oserv__link link">
                         <div class="oserv-over">
-                           <img src="./images/img31.jpg" alt="Дизайн" width="370" height="294" />
+                           <picture>
+                              <source
+                                 srcset="./images/img31.jpg 1x, ./images/img31.jpg 2x"
+                                 media="(min-width:1200px)"
+                              />
+                              <source
+                                 srcset="./images/img31-tab-1x.jpg 1x, ./images/img31-tab-2x.jpg 2x"
+                                 media="(min-width:768px)"
+                              />
+                              <source
+                                 srcset="
+                                    ./images/img31-mobile-1x.jpg 1x,
+                                    ./images/img31-mobile-2x.jpg 2x
+                                 "
+                                 media="(max-width:767px)"
+                              />
+                              <img
+                                 src="../images/img31-mobile-2x.jpg"
+                                 alt="Дизайн"
+                                 width="450"
+                                 height="294"
+                              />
+                           </picture>
                            <p class="over-text">
                               Ресурс предлагает комплексные предложения с разным уровнем функционала
                               и сервисов. Все это позволит посетителю получить исчерпывающие
@@ -241,7 +401,29 @@
                   <li class="ourserv__item">
                      <a href="#" class="oserv__link link">
                         <div class="oserv-over">
-                           <img src="./images/img32.jpg" alt="Маркетинг" width="370" height="294" />
+                           <picture>
+                              <source
+                                 srcset="./images/img32.jpg 1x, ./images/img32.jpg 2x"
+                                 media="(min-width:1200px)"
+                              />
+                              <source
+                                 srcset="./images/img32-tab-1x.jpg 1x, ./images/img32-tab-2x.jpg 2x"
+                                 media="(min-width:768px)"
+                              />
+                              <source
+                                 srcset="
+                                    ./images/img32-mobile-1x.jpg 1x,
+                                    ./images/img32-mobile-2x.jpg 2x
+                                 "
+                                 media="(max-width:767px)"
+                              />
+                              <img
+                                 src="../images/img32-mobile-2x.jpg"
+                                 alt="Маркетинг"
+                                 width="450"
+                                 height="294"
+                              />
+                           </picture>
                            <p class="over-text">
                               Ресурс предлагает комплексные предложения с разным уровнем функционала
                               и сервисов. Все это позволит посетителю получить исчерпывающие
@@ -257,7 +439,29 @@
                   <li class="ourserv__item">
                      <a href="#" class="oserv__link link">
                         <div class="oserv-over">
-                           <img src="./images/img33.jpg" alt="Веб-сайт" width="370" height="294" />
+                           <picture>
+                              <source
+                                 srcset="./images/img33.jpg 1x, ./images/img33.jpg 2x"
+                                 media="(min-width:1200px)"
+                              />
+                              <source
+                                 srcset="./images/img33-tab-1x.jpg 1x, ./images/img33-tab-2x.jpg 2x"
+                                 media="(min-width:768px)"
+                              />
+                              <source
+                                 srcset="
+                                    ./images/img33-mobile-1x.jpg 1x,
+                                    ./images/img33-mobile-2x.jpg 2x
+                                 "
+                                 media="(max-width:767px)"
+                              />
+                              <img
+                                 src="../images/img33-mobile-2x.jpg"
+                                 alt="Приложение"
+                                 width="450"
+                                 height="294"
+                              />
+                           </picture>
                            <p class="over-text">
                               Ресурс предлагает комплексные предложения с разным уровнем функционала
                               и сервисов. Все это позволит посетителю получить исчерпывающие
@@ -277,14 +481,22 @@
       <footer class="footer">
          <div class="container footer__container">
             <div class="footer__contacts">
-               <a lang="en" href="./index.html" class="logo logo--footer">Web<span class="logo__light">Studio</span></a>
+               <a lang="en" href="./index.html" class="logo logo--footer"
+                  >Web<span class="logo__light">Studio</span></a
+               >
                <address class="footer__adress">г. Киев, пр-т Леси Украинки, 26</address>
                <ul class="contacts footer__contacts">
                   <li>
-                     <a href="mailto:info@devstudio.com" class="contacts__mail contacts__mail-ft link">info@devstudio.com</a>
+                     <a
+                        href="mailto:info@devstudio.com"
+                        class="contacts__mail contacts__mail-ft link"
+                        >info@devstudio.com</a
+                     >
                   </li>
                   <li>
-                     <a href="tel:+380961111111" class="contacts__tel contacts__tel-ft link">+38 096 111 11 11</a>
+                     <a href="tel:+380961111111" class="contacts__tel contacts__tel-ft link"
+                        >+38 096 111 11 11</a
+                     >
                   </li>
                </ul>
             </div>
@@ -293,28 +505,44 @@
                <ul class="sociallinks list">
                   <li class="sociallinks__item">
                      <a href="" class="sociallinks__link sociallinks__link-footer link">
-                        <svg class="sociallinks__icon sociallinks__icon-footer" width="20" height="20">
+                        <svg
+                           class="sociallinks__icon sociallinks__icon-footer"
+                           width="20"
+                           height="20"
+                        >
                            <use href="./images/icons.svg#icon-instagram"></use>
                         </svg>
                      </a>
                   </li>
                   <li class="sociallinks__item">
                      <a href="" class="sociallinks__link sociallinks__link-footer link">
-                        <svg class="sociallinks__icon sociallinks__icon-footer" width="20" height="20">
+                        <svg
+                           class="sociallinks__icon sociallinks__icon-footer"
+                           width="20"
+                           height="20"
+                        >
                            <use href="./images/icons.svg#icon-twitter"></use>
                         </svg>
                      </a>
                   </li>
                   <li class="sociallinks__item">
                      <a href="" class="sociallinks__link sociallinks__link-footer link">
-                        <svg class="sociallinks__icon sociallinks__icon-footer" width="20" height="20">
+                        <svg
+                           class="sociallinks__icon sociallinks__icon-footer"
+                           width="20"
+                           height="20"
+                        >
                            <use href="./images/icons.svg#icon-facebook"></use>
                         </svg>
                      </a>
                   </li>
                   <li class="sociallinks__item">
                      <a href="" class="sociallinks__link sociallinks__link-footer link">
-                        <svg class="sociallinks__icon sociallinks__icon-footer" width="20" height="20">
+                        <svg
+                           class="sociallinks__icon sociallinks__icon-footer"
+                           width="20"
+                           height="20"
+                        >
                            <use href="./images/icons.svg#icon-linkedin"></use>
                         </svg>
                      </a>
@@ -323,7 +551,13 @@
             </div>
             <form class="ft-form">
                <h3 class="ft-form-header">подпишитесь на рассылку</h3>
-               <input type="email" class="ft-form-input" name="email" id="email" placeholder="Email" />
+               <input
+                  type="email"
+                  class="ft-form-input"
+                  name="email"
+                  id="email"
+                  placeholder="Email"
+               />
                <button type="submit" class="ft-form-button">
                   Подписаться
                   <svg class="ft-form-bticon" width="24" height="24">
