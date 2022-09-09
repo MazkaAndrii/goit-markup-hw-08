@@ -733,18 +733,6 @@ body {
 
 .contacts--ft {
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  box-sizing: border-box;
-  width: 227px;
-}
-@media screen and (min-width: 1200px) {
-  .contacts--ft {
-    justify-content: left;
-    width: 227px;
-  }
 }
 
 .logo--footer {

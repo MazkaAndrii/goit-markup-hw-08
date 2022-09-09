@@ -32,17 +32,7 @@
 }
 .contacts--ft {
    list-style: none;
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   align-content: center;
-   box-sizing: border-box;
-   width: 227px;
-   @include desktop {
-      justify-content: left;
-      width: 227px;
-   }
-}
+  }
 .logo--footer {
    display: block;
    margin-bottom: 20px;
