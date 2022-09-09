@@ -2,18 +2,15 @@
    border-bottom: 1px solid #ececec;
    padding: 10px 0 10px;
    @include tablet {
-    padding: 21px 0 21px;  
+      padding: 21px 0 21px;
    }
    @include desktop {
-    padding: 24px 0 25px;  
+      padding: 24px 0 25px;
    }
 }
 .header__container {
    display: flex;
    align-items: center;
-   @media screen and (min-width: 768px) and (max-width: 1199px) {
-      justify-content: space-between;
-   }
 }
 .logo {
    font-family: Raleway;
@@ -25,11 +22,13 @@
    letter-spacing: 0.02em;
 }
 .logo__header {
+   @include tablet {
+      margin-right: 88px;
+   }
    @include desktop {
       margin-right: 93px;
    }
 }
-
 .logo__dark {
    color: #000000;
 }
@@ -101,6 +100,7 @@
    padding-left: 40px;
 }
 .navmenucontacts__link {
+   font-weight: 500;
    font-size: 24px;
    line-height: 1.17px;
    letter-spacing: 0.02em;
@@ -142,17 +142,17 @@
    letter-spacing: 0.02em;
    color: var(--header-color);
 }
-
 .navigation {
    display: none;
    @include tablet {
       display: flex;
-      flex-wrap: nowrap;
-      justify-content: center;
    }
-   @include desktop {
+}
+.navigation__list {
+   list-style: none;
+   @include tablet {
       display: flex;
-      column-gap: 50px;
+      gap: 50px;
    }
 }
 .navigation__link {
@@ -178,36 +178,48 @@
    &::after {
       content: '';
       display: flex;
+      padding-top: auto;
       width: 100%;
       height: 4px;
       background: var(--header-color);
       border-radius: 2px;
       position: absolute;
       left: 0;
-      top: 45px;
+      top: 47px;
    }
 }
 .contacts {
    display: none;
    @include tablet {
       display: flex;
-      flex-direction: column;
-      }
+      margin-left: auto;
+   }
    @include desktop {
-      flex-direction: row;
       margin-left: auto;
       column-gap: 50px;
    }
 }
-.contacts__mail,
-.contacts__tel {
+.contacts__list {
+   list-style: none;
+   @include desktop {
+      display: flex;
+      gap: 30px;
+      padding-bottom: 0px;
+   }
+}
+.contacts__item:not(:last-child) {
+   padding-bottom: 10px;
+   @include desktop {
+      padding-bottom: 0px;
+   }
+}
+.contacts__link {
    display: flex;
    align-items: center;
    font-weight: 500;
-   font-size: 14px;
-   line-height: 1.14;
+   font-size: 12px;
+   line-height: 1.16;
    letter-spacing: 0.02em;
-   margin-bottom: 8px;
    color: var(--basetext-color);
    &:hover,
    &:focus {
@@ -215,7 +227,8 @@
    }
    transition: color var(--trans);
    @include desktop {
-      margin-bottom: 0px;
+      font-size: 14px;
+      line-height: 1.14;
    }
 }
 .contacts__icon {
@@ -226,12 +239,8 @@
    &:focus {
       fill: currentColor;
    }
-   .contacts__mail:hover &,
-   .contacts__mail:focus & {
-      fill: currentColor;
-   }
-   .contacts__tel:hover &,
-   .contacts__tel:focus & {
+   .contacts__link:hover &,
+   .contacts__link:focus & {
       fill: currentColor;
    }
 }

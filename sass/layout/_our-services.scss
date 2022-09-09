@@ -4,7 +4,7 @@
    row-gap: 15px;
    @include tablet {
       justify-content: center;
-      margin-bottom: 14px;
+      margin-bottom: 30px;
    }
    @include desktop {
       justify-content: center;
@@ -38,10 +38,10 @@
 
 .ourserv__item {
    @include tablet {
-    width: calc((100% - 30px) / 2);  
+      width: calc((100% - 30px) / 2);
    }
    @include desktop {
-    width: calc((100% - 60px) / 3);  
+      width: calc((100% - 60px) / 3);
    }
 }
 .oserv__link {
@@ -88,7 +88,6 @@
    letter-spacing: 0.06em;
    color: var(--text-color);
    margin-bottom: 4px;
-  
 }
 .oserv-item-text {
    font-size: 16px;

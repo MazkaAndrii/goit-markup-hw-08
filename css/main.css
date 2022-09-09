@@ -127,11 +127,6 @@ body {
   display: flex;
   align-items: center;
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .header__container {
-    justify-content: space-between;
-  }
-}
 
 .logo {
   font-family: Raleway;
@@ -143,6 +138,11 @@ body {
   letter-spacing: 0.02em;
 }
 
+@media screen and (min-width: 768px) {
+  .logo__header {
+    margin-right: 88px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .logo__header {
     margin-right: 93px;
@@ -231,6 +231,7 @@ body {
 }
 
 .navmenucontacts__link {
+  font-weight: 500;
   font-size: 24px;
   line-height: 1.17px;
   letter-spacing: 0.02em;
@@ -283,15 +284,16 @@ body {
 @media screen and (min-width: 768px) {
   .navigation {
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
   }
 }
-@media screen and (min-width: 1200px) {
-  .navigation {
+
+.navigation__list {
+  list-style: none;
+}
+@media screen and (min-width: 768px) {
+  .navigation__list {
     display: flex;
-    -moz-column-gap: 50px;
-         column-gap: 50px;
+    gap: 50px;
   }
 }
 
@@ -320,13 +322,14 @@ body {
 .navigation__link--current::after {
   content: "";
   display: flex;
+  padding-top: auto;
   width: 100%;
   height: 4px;
   background: var(--header-color);
   border-radius: 2px;
   position: absolute;
   left: 0;
-  top: 45px;
+  top: 47px;
 }
 
 .contacts {
@@ -335,39 +338,54 @@ body {
 @media screen and (min-width: 768px) {
   .contacts {
     display: flex;
-    flex-direction: column;
+    margin-left: auto;
   }
 }
 @media screen and (min-width: 1200px) {
   .contacts {
-    flex-direction: row;
     margin-left: auto;
     -moz-column-gap: 50px;
          column-gap: 50px;
   }
 }
 
-.contacts__mail,
-.contacts__tel {
+.contacts__list {
+  list-style: none;
+}
+@media screen and (min-width: 1200px) {
+  .contacts__list {
+    display: flex;
+    gap: 30px;
+    padding-bottom: 0px;
+  }
+}
+
+.contacts__item:not(:last-child) {
+  padding-bottom: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .contacts__item:not(:last-child) {
+    padding-bottom: 0px;
+  }
+}
+
+.contacts__link {
   display: flex;
   align-items: center;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
-  margin-bottom: 8px;
   color: var(--basetext-color);
   transition: color var(--trans);
 }
-.contacts__mail:hover, .contacts__mail:focus,
-.contacts__tel:hover,
-.contacts__tel:focus {
+.contacts__link:hover, .contacts__link:focus {
   color: var(--header-color);
 }
 @media screen and (min-width: 1200px) {
-  .contacts__mail,
-.contacts__tel {
-    margin-bottom: 0px;
+  .contacts__link {
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 
@@ -379,10 +397,7 @@ body {
 .contacts__icon:hover, .contacts__icon:focus {
   fill: currentColor;
 }
-.contacts__mail:hover .contacts__icon, .contacts__mail:focus .contacts__icon {
-  fill: currentColor;
-}
-.contacts__tel:hover .contacts__icon, .contacts__tel:focus .contacts__icon {
+.contacts__link:hover .contacts__icon, .contacts__link:focus .contacts__icon {
   fill: currentColor;
 }
 
@@ -395,7 +410,8 @@ body {
 
 .hero__overlay {
   max-width: 1600px;
-  height: 400px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heroimg-mobile.jpg);
@@ -711,6 +727,16 @@ body {
   }
 }
 
+.footer__contacts {
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer__contacts {
+    margin-bottom: 0px;
+    margin-right: 70px;
+  }
+}
+
 .contacts--ft {
   list-style: none;
   display: flex;
@@ -724,7 +750,6 @@ body {
   .contacts--ft {
     justify-content: left;
     width: 227px;
-    margin-right: 70px;
   }
 }
 
@@ -744,16 +769,6 @@ body {
   letter-spacing: 0.03em;
   color: var(--accent-color);
   text-align: left;
-  margin-bottom: 8px;
-}
-
-.footer__contacts {
-  margin-bottom: 60px;
-}
-@media screen and (min-width: 1200px) {
-  .footer__contacts {
-    margin-bottom: 0px;
-  }
 }
 
 .contacts__mail-ft {
@@ -814,16 +829,6 @@ body {
   text-transform: uppercase;
   color: var(--accent-color);
   margin-bottom: 20px;
-}
-@media screen and (min-width: 768px) {
-  .ft-form-header {
-    padding-top: 0px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .ft-form-header {
-    padding-top: 0px;
-  }
 }
 
 .ft-form {
@@ -920,7 +925,7 @@ body {
 @media screen and (min-width: 768px) {
   .filters {
     justify-content: center;
-    margin-bottom: 14px;
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
