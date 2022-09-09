@@ -218,7 +218,8 @@ body {
   letter-spacing: 0.02em;
   color: var(--text-color);
 }
-.navmenu__link--color {
+
+.navmenu__link.navmenu__link--color {
   color: var(--header-color);
 }
 

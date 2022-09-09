@@ -89,10 +89,9 @@
    line-height: 1.17;
    letter-spacing: 0.02em;
    color: var(--text-color);
-   &--color {
-      color: var(--header-color);
    }
-}
+.navmenu__link.navmenu__link--color {
+         color: var(--header-color);}
 .navmenucontacts {
    flex-direction: column;
    column-gap: 32px;
