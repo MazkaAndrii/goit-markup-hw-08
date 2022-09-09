@@ -794,6 +794,11 @@ body {
 .footer-soc {
   margin-bottom: 60px;
 }
+@media screen and (min-width: 768px) {
+  .footer-soc {
+    margin-bottom: 0px;
+  }
+}
 
 .sociallinks__link-footer {
   background-color: rgba(255, 255, 255, 0.1);

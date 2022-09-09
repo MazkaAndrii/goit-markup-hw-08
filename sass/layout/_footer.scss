@@ -32,7 +32,7 @@
 }
 .contacts--ft {
    list-style: none;
-  }
+}
 .logo--footer {
    display: block;
    margin-bottom: 20px;
@@ -82,6 +82,9 @@
 }
 .footer-soc {
    margin-bottom: 60px;
+   @include tablet {
+      margin-bottom: 0px;
+   }
 }
 .sociallinks__link-footer {
    background-color: rgba(255, 255, 255, 0.1);
