@@ -1,6 +1,12 @@
 .header {
    border-bottom: 1px solid #ececec;
-   padding: 24px 0 25px;
+   padding: 10px 0 10px;
+   @include tablet {
+    padding: 21px 0 21px;  
+   }
+   @include desktop {
+    padding: 24px 0 25px;  
+   }
 }
 .header__container {
    display: flex;
@@ -178,7 +184,7 @@
       border-radius: 2px;
       position: absolute;
       left: 0;
-      top: 47px;
+      top: 45px;
    }
 }
 .contacts {
@@ -186,8 +192,7 @@
    @include tablet {
       display: flex;
       flex-direction: column;
-      gap: 10px;
-   }
+      }
    @include desktop {
       flex-direction: row;
       margin-left: auto;
@@ -202,12 +207,16 @@
    font-size: 14px;
    line-height: 1.14;
    letter-spacing: 0.02em;
+   margin-bottom: 8px;
    color: var(--basetext-color);
    &:hover,
    &:focus {
       color: var(--header-color);
    }
    transition: color var(--trans);
+   @include desktop {
+      margin-bottom: 0px;
+   }
 }
 .contacts__icon {
    margin-right: 10px;
