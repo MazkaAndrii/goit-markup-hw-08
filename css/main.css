@@ -95,7 +95,6 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color);
-  margin: 0 auto;
   margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
@@ -425,7 +424,8 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .hero__overlay {
-    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heroimg.jpg);
   }
 }
@@ -504,7 +504,6 @@ body {
   text-transform: uppercase;
   color: var(--text-color);
   text-align: center;
-  margin-top: 0px;
   margin-bottom: 10px;
 }
 @media screen and (min-width: 768px) {
@@ -518,7 +517,6 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--basetext-color);
-  margin: 0px;
 }
 @media screen and (min-width: 480px) {
   .benefits__text {
@@ -553,7 +551,7 @@ body {
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 370px;
+  width: 100%;
   height: 70px;
   display: flex;
   justify-content: center;
@@ -562,7 +560,6 @@ body {
   font-weight: var(--font-weight);
   font-size: 14px;
   line-height: 1.14;
-  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--accent-color);
@@ -703,15 +700,12 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: baseline;
-    text-align: center;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer__container {
-    flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
-    align-items: baseline;
     text-align: start;
   }
 }
@@ -749,18 +743,13 @@ body {
 }
 
 .contacts__mail-ft {
-  margin-bottom: 8px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-}
-@media screen and (min-width: 1200px) {
-  .contacts__mail-ft {
-    margin-bottom: 8px;
-  }
+  margin-bottom: 8px;
 }
 
 .contacts__tel-ft {
@@ -778,12 +767,12 @@ body {
 }
 
 .ft-header {
-  margin-bottom: 20px;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--accent-color);
+  margin-bottom: 20px;
 }
 
 .footer-soc {
@@ -813,9 +802,6 @@ body {
   margin-bottom: 20px;
 }
 
-.ft-form {
-  display: block;
-}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .ft-form {
     display: flex;

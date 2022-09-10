@@ -29,10 +29,10 @@
       width: 450px;
    }
    @include desktop {
-    width: 528px;
-    height: 581px;
-    transform: translate(-50%, -50%) scale(1);
-    }
+      width: 528px;
+      height: 581px;
+      transform: translate(-50%, -50%) scale(1);
+   }
 }
 .bt-modal {
    position: absolute;
@@ -64,7 +64,6 @@
    @include desktop {
       line-height: 1.15;
    }
-
 }
 .input-label {
    font-size: 12px;

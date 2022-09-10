@@ -8,7 +8,7 @@
 
    @include mobile {
       width: 450px;
-         }
+   }
    @include tablet {
       width: 354px;
    }
@@ -25,7 +25,6 @@
    text-transform: uppercase;
    color: var(--text-color);
    text-align: center;
-   margin-top: 0px;
    margin-bottom: 10px;
    @include tablet {
       text-align: start;
@@ -36,11 +35,9 @@
    line-height: 1.71;
    letter-spacing: 0.03em;
    color: var(--basetext-color);
-   margin: 0px;
-   // max-width: 100%;
-    @include mobile {
+   @include mobile {
       width: 450px;
-         }
+   }
    @include tablet {
       width: 354px;
    }

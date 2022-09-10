@@ -13,13 +13,10 @@
       flex-wrap: wrap;
       justify-content: space-around;
       align-items: baseline;
-      text-align: center;
    }
    @include desktop {
-      flex-direction: row;
       flex-wrap: nowrap;
       justify-content: center;
-      align-items: baseline;
       text-align: start;
    }
 }
@@ -50,16 +47,13 @@
 }
 
 .contacts__mail-ft {
-   margin-bottom: 8px;
    font-style: normal;
    font-weight: 400;
    font-size: 14px;
    line-height: 1.71;
    letter-spacing: 0.03em;
    color: rgba(255, 255, 255, 0.6);
-   @include desktop {
-      margin-bottom: 8px;
-   }
+   margin-bottom: 8px;
 }
 .contacts__tel-ft {
    font-style: normal;
@@ -73,12 +67,12 @@
    }
 }
 .ft-header {
-   margin-bottom: 20px;
    font-size: 14px;
    line-height: 1.14;
    letter-spacing: 0.03em;
    text-transform: uppercase;
    color: var(--accent-color);
+   margin-bottom: 20px;
 }
 .footer-soc {
    margin-bottom: 60px;
@@ -102,7 +96,6 @@
    margin-bottom: 20px;
 }
 .ft-form {
-   display: block;
    @media screen and (min-width: 768px) and (max-width: 1199px) {
       display: flex;
       flex-wrap: wrap;
